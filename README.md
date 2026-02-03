@@ -25,7 +25,7 @@ The developer tried to strengthen their filtering by combining both methods. The
 ## CSRF Attack
 Write CSRF attacks against SunnyBank’s money transfer functionality, which allows users to transfer money to other users’ accounts.
 The goal is to craft an HTML file that either automatically triggers a transfer from the victim’s account to the attacker's account when opened by the victim
-## csrf_0.html
+### csrf_0.html
 No defenses against CSRF attacks are implemented. Create an HTML file such that when a user is logged in and opens it in their browser, money is sent to the attacker’s account. 
-## csrf_1.html
+### csrf_1.html
 The developers have implemented a secure version of the transfer functionality. This version attempts to protect against CSRF attacks by requiring a token. Specifically, the site sets a cookie named csrf_token to a random 16-byte value, and the legitimate transfer form includes this token as a hidden form field. The server will verify that both the form field and the cookie match. If they do not match, the transfer is rejected.
